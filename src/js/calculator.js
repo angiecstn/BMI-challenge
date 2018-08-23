@@ -24,4 +24,4 @@ BMICalculator.prototype.metric_bmi = function(obj) {
     if (obj.bmiValue > 30) {
       obj.bmiMessage = "Obese"
     }
-  }
+  } 
