@@ -9,7 +9,7 @@ Person.prototype.calculate_bmi = function () {
 };
 
 
-Person.prototype.calculate_bmi_imperial= function () {
+Person.prototype.calculate_bmi_imperial = function () {
     calculator = new BMICalculator();
     calculator.imperial_bmi(this)
 };
