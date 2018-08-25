@@ -6,11 +6,15 @@
     <title>BMI Calculator</title>
     <script src="./js/person.js"></script>
     <script src="./js/calculator.js"></script>
+    <!-- load MUI -->
+    <link href="http://cdn.muicss.com/mui-0.9.40/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="http://cdn.muicss.com/mui-0.9.40/js/mui.min.js"></script>    
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
         <script type="text/javascript">
-            
+
             document.addEventListener('DOMContentLoaded', () => {
                 const global = {}   
                 global.calculateForm = document.querySelector('#calculate');
@@ -47,29 +51,35 @@
                 })
             };
     </script>
+    <div class="mui-container" id="maindiv">
+            <div class="mui-panel">
     <h1>Calculate your BMI</h1>
     <h3>Choose your preferred method</h3>
     
     <form action="Choose Method" id="button">
-        <input id="metric" type="radio" name="method" value="metric">metric<br>
-        <input id="imperial" type="radio" name="method" value="imperial">imperial<br>
+        <input id="metric" type="radio" name="method" value="metric">Metric<br>
+        <input id="imperial" type="radio" name="method" value="imperial">Imperial<br>
     </form>
     </br>
     </br>
 
-    <form id="calculate">
-        <div id="metric-inputs">
+    <form id="calculate" class="mui-form">
+        <div class="mui-textfield" id="metric-inputs">
             <input type="text" id="weight-in-kgs" placeholder="Weight">
             <input type="text" id="height-in-cm" placeholder="Height">
         </div>
         </br>
         </br>
-        <button type="submit" value="Calculate"> Calculate </button>      
+        <button class="mui-btn mui-btn--raised" type="submit" value="Calculate"> Calculate </button>      
     </form>
+</br>
+</br>
     <div>
         <span id="display_value"></span>
         <span id="display_message"></span>
     </div>
+</div>
+</div>
 
 </body>
 

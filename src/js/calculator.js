@@ -33,6 +33,7 @@ BMICalculator.prototype.metric_bmi = function(obj) {
     let height = obj.height; //5.8
     console.log(height, weight)
     let array = String(height).split(".");
+    console.log (array);
     let feet = Number(array[0]);
     let inches = Number(array[1]);
     console.log(feet, inches)

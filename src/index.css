@@ -1,0 +1,14 @@
+body {
+    background-color: #a3b6c1;
+}
+
+
+.mui-panel { 
+    background-color:rgba(224, 230, 231, 0.91);
+    margin-top: 30px;
+    padding: 100px;
+    margin-bottom: 20px;
+    font-family:'Palatino Linotype';
+}
+
+
